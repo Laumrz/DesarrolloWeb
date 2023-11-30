@@ -1,0 +1,111 @@
+* {
+    margin:auto;
+    padding: auto;
+}
+
+body{
+    background: linear-gradient(rgb(38, 131, 131), rgb(131, 184, 184), rgb(161, 202, 202))
+}
+
+.titulo1{
+    text-align: center;
+    color: white;
+    border-bottom: dotted;
+    width: 36%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.titulo2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-reg{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    box-shadow: 0 1px 4px 0 rgb(17, 107, 107);
+    text-align: center;
+    margin-bottom: 90px;
+    
+}
+
+.form-row{
+   text-align: left;
+   margin-bottom: 22px;
+   margin-top: 20px;
+}
+
+
+.form-reg h1{
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding: 0 10px 15px;
+    color: rgb(17, 107, 107);
+    border-bottom: 2px solid rgb(17, 107, 107);
+    margin: 0;
+}
+
+.form-reg .form-row label {
+    display:inline-block;
+    box-sizing: border-box;
+    color: rgb(5, 5, 5);
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 20px;
+
+}
+
+.form-reg .form-row input{
+    width: 230px;
+    box-sizing: border-box;
+    border: 1px solid rgb(52, 139, 139);
+    
+}
+
+.form-reg input[type=submit],
+.form-reg input[type=reset]{
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(17, 107, 107);
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.438);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .form-reg {
+        padding: 30 px;
+        max-width: 480px;
+    }
+    .form-reg .form-row{
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+    .form-reg .titulo2{
+        margin-bottom: 50px;
+    }
+    .form-reg .form-row>label {
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+    .form-reg input[type= submit],
+    .form-reg input[type= reset]{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}

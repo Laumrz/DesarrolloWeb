@@ -20,12 +20,19 @@ if (isset($_POST["enviar"])){
             //si esta registrado se inicia la sesion
             session_start();
             $_SESSION["usuario"] = $_POST["usuario"];
-            //header("location:pag_inicio.php");
+            header("location:pag_inicio.php");
         } else {
             //header("location:form_acceso.php");
             echo "LOS DATOS DE USUARIO SON INCORRECTOS";
         }
-    } catch (Exception $e) {
+
+        if(isset($_POST["recordar"])){
+            //crear cookie por 15 dias
+            setcookie("datos_usuario", $_POST["correo"], time()+1296000);
+        }
+        
+    } 
+    catch (Exception $e) {
         die("Error: " . $e->getMessage());
     }
 }
@@ -48,6 +55,10 @@ if (isset($_POST["enviar"])){
         </div>
         <div class="inp">
             <input type="password" name="password" class="input" placeholder="contraseña">
+        </div>
+        <div class="inp">
+        <br><br><input type="checkbox" name="recordar">
+            <label>Recordarme en este equipo</label>
         </div>
             <input class="submit" type="submit" name="enviar" value= "ENVIAR">
     </form>

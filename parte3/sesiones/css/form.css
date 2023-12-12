@@ -20,7 +20,7 @@ body{
     height: 55vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 3px solid #6b7cf995;
+    border: 3px solid #6b7cf975;
     box-shadow: 0 0 30px 0 #6b7cf995;
 }
 
@@ -61,7 +61,7 @@ body{
     border-radius: 40px;
     letter-spacing: 1px;
     cursor: pointer;
-    background: linear-gradient(45deg, #6b7cf995, #9c67aa);
+    background: linear-gradient(45deg, #6b7cf995, #4faa7b);
 }
 
 .footer{
@@ -77,7 +77,7 @@ body{
     right: 0;
     width: 450px;
     height: 100%;
-    background: linear-gradient(to  right,  #6b7cf995, #9c67aa);
+    background: linear-gradient(to  right,  #6b7cf995, #4faa7b);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
     padding-right: 70px;
     text-align: right;

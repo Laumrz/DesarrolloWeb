@@ -1,0 +1,49 @@
+.loggin-box {
+    margin: 5vh auto; 
+    padding: 20px;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 450px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.loggin-box h1 {
+    text-align: center;
+    color: #ff6f61;
+    font-size: 10;
+    margin-bottom: 20px;
+}
+.loggin-box hr {
+    border: 1px solid #ff6f61;
+    margin-bottom: 20px;
+}
+.form-register input[type="text"],
+.form-register input[type="email"],
+.form-register input[type="password"], 
+.form-register select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1em;
+}
+.form-register input[type="submit"] {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+.form-register input[type="submit"]:hover {
+    background-color: #e05a4e;
+}

@@ -6,13 +6,13 @@ session_start();
 if (!isset($_SESSION["usuario"])) {
     include("form_acceso.php");
 } else {
-    echo "Bienvenido al sistema". $_SESSION["usuario"];
+    echo "Bienvenido al sistema ". $_SESSION["usuario"];
 }
 ?>
 
 <head>
-    <title>DOM</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <title>PAG</title>
+    <link rel="stylesheet" href="css/pag.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -20,12 +20,20 @@ if (!isset($_SESSION["usuario"])) {
         <h1>El blog de flores</h1>
     </header>
     <nav>
-        <ul>
-            <li class="selected"><a href="#">Blog</a></li>
+        <ul class="menu">
+
+            <li><a href="#">procesos</a>
+            <ul class="submenu">
+                <li><a href="/repositorios/desarrolloweb/parte1/consultar.php">Buscar productos</a></li>
+                <li><a href="/repositorios/desarrolloweb/parte2/productos/registro.php">Buscar productos</a></li>
+            </ul>
+            </li>
+
             <li><a href="#">Acerca de</a></li>
             <li><a href="#">Archivos</a></li>
             <li><a href="#">Contacto</a></li>
-            <li class="subscribe"><a href="#">Subscribe via. RSS</a></li>
+            <li><a href="form_acceso.php">Cerrar sesion</a><li>
+            
         </ul>
     </nav>
     <section id="intro">
@@ -33,7 +41,7 @@ if (!isset($_SESSION["usuario"])) {
             <h2>¿Amas las flores tanto como a nosotros?</h2>
         </header>
         <p>La flor es la estructura reproductiva característica de las plantas llamadas espermatofitas o fanerógamas. La función de una flor es producir semillas a través de la reproducción sexual. Para las plantas, las semillas son la próxima generación y sirven como el principal medio a través del cual las especies se perpetúan y se propagan.</p>
-        <img src="img/intro_flower.png" alt="Flower" />
+        <img src="img/flor.jpg" alt="Flower" />
     </section>
     <div id="content">
         <div id="mainContent">

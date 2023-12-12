@@ -20,10 +20,10 @@
 
     mysqli_select_db($conexion,$db_nombre) or die (" NO SE ENCUENTRA LA BASE DE DATOS");
 
-    $consulta = "INSERT INTO productos(id_producto, seccion, producto, origen, importado, precio)
-    VALUES('ar39', 'FERRETERIA', 'pela cables', 'china', 'FALSO', 10000)";
-    $resultado = mysqli_query($conexion, $consulta);
-    mysqli_close($conexion)
+    //$consulta = "INSERT INTO productos(id_producto, seccion, producto, origen, importado, precio)
+    //VALUES('ar39', 'FERRETERIA', 'pela cables', 'china', 'FALSO', 10000)";
+    //$resultado = mysqli_query($conexion, $consulta);
+    //mysqli_close($conexion)
     ?>
 
 
